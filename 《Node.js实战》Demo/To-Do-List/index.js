@@ -1,5 +1,6 @@
 const http = require('http');
-const Buffer = require('buffer');
+const { Buffer } = require('buffer');
+const qs = require('querystring');
 
 let items = []
 
@@ -48,7 +49,7 @@ function show(res) {
   res.end(html)
 }
 
-function notFound(res) {
+function notFound(req, res) {
   res.statusCode = 404
   res.setHeader('Content-Type', 'text/plain')
   res.end('Not Found')
@@ -60,3 +61,15 @@ function badRequest(res) {
   res.end('Bad Request')
 }
 
+function add(req, res) {
+  let body = ''
+  req.setEncoding('utf8');
+  req.on('data', function (chunk) {
+    body += chunk
+  })
+  req.on('end', function () {
+    let obj = qs.parse(body)
+    items.push(obj.item)
+    show(res)
+  })
+}
