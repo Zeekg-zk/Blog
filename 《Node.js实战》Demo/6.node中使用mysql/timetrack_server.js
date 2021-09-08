@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
       // 当为 POST 请求时进行的操作
       switch (req.url) {
         case '/':
-          work.add(req, res)
+          work.add(db, req, res)
           break;
         case '/archive':
           work.archive(db, req, res)
@@ -25,14 +25,15 @@ const server = http.createServer((req, res) => {
           work.delete(db, req, res)
           break;
       }
+      break; // 这个 break 不能掉
     case 'GET':
       // 当为 GET 请求时进行的操作
       switch (req.url) {
         case '/':
           work.show(db, res)
           break;
-        case '/archive':
-          work.showArchive(db, res)
+        case '/archived':
+          work.showArchived(db, res)
           break;
       }
   }

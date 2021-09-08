@@ -1,6 +1,10 @@
 const qs = require('querystring');
 
-// 发送 html 响应
+/**
+ * 发送 html 响应
+ * @param {*} res 响应
+ * @param {*} html 要发送的html
+ */
 exports.sendHtml = function (res, html) {
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Content-Length', Buffer.byteLength(html));
@@ -10,9 +14,8 @@ exports.sendHtml = function (res, html) {
 // 解析 HTTP POST 数据
 exports.parseReceivedData = (req, callback) => {
   let body = ''
-  // req.setEncoding('utf8');
+  req.setEncoding('utf8');
   req.on('data', chunk => {
-    console.log(chunk);
     body += chunk;
   })
   req.on('end', () => {
@@ -29,13 +32,14 @@ exports.actionForm = (id, path, label) => {
       <input type="submit" value="${label}">
     </form>
   `
+  return html
 }
 
 // 添加数据到数据库
 exports.add = (db, req, res) => {
   exports.parseReceivedData(req, work => {
     db.query(
-      `insert into work (hours, date, description) values(?,?,?)`,
+      `insert into work (hours, date, description) values (?,?,?)`,
       [work.hours, work.date, work.description],
       err => {
         if (err) throw err;
@@ -59,11 +63,11 @@ exports.delete = (db, req, res) => {
   })
 }
 
-// 存档一个数据
+// 存档一个数据（将存档的标志改为 1）
 exports.archive = (db, req, res) => {
   exports.parseReceivedData(req, work => {
     db.query(
-      `update work set archive = ? where id = ?`,
+      `update work set archived =1 where id = ?`,
       [work.id],
       err => {
         if (err) throw err;
@@ -73,6 +77,7 @@ exports.archive = (db, req, res) => {
   })
 }
 
+// 显示内容
 exports.show = (db, res, showArchived) => {
   let archiveValue = showArchived ? 1 : 0
   db.query(
@@ -80,21 +85,28 @@ exports.show = (db, res, showArchived) => {
     [archiveValue],
     (err, rows) => {
       if (err) throw err;
-      let html = showArchived ? '' : `
-        <a href="/archived}">Archived Word</a>
-        ${exports.workHitlistHtml(rows)}
-        ${exports.workFormatHtml()}
-      `
+      let html = showArchived ? '' : `<a href="/archived">Archived Word</a>`
+      html += exports.workHitlistHtml(rows)
+      html += exports.workFormatHtml()
       exports.sendHtml(res, html)
     }
   )
 }
 
+/**
+ * 当需要获取已存档的数据
+ * @param {*} db 
+ * @param {*} res 
+ */
 exports.showArchived = (db, res) => {
-  exports.show(sb, res, true)
+  exports.show(db, res, true)
 }
 
-// 将工作记录渲染成 HTML表格
+/**
+ * 将工作记录渲染成 HTML表格
+ * @param {*} rows 数据(工作记录)
+ * @returns 
+ */
 exports.workHitlistHtml = rows => {
   let html = '<table>'
   for (let i in rows) {
@@ -112,6 +124,10 @@ exports.workHitlistHtml = rows => {
   return html
 }
 
+/**
+ * 渲染form表单
+ * @returns 
+ */
 exports.workFormatHtml = () => {
   let html = `
   <form action="/" method="POST">
@@ -131,5 +147,5 @@ exports.workArchiveForm = id => {
 
 // 渲染删除按钮表单
 exports.workDeleteForm = id => {
-  return exports.actionDeleteForm(id, '/delete', 'Delete')
+  return exports.actionForm(id, '/delete', 'Delete')
 }
