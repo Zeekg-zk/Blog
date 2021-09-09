@@ -51,6 +51,6 @@ function admin(req, res, next) {
 connect()
   .use(logger)
   .use('/admin', restrict)
-  .use('admin', admin)
+  .use('/admin', admin)
   .use(hello)
   .listen(3000)
