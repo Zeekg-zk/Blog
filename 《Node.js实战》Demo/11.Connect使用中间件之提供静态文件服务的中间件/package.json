@@ -1,0 +1,17 @@
+{
+  "name": "connect-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "connect": "^3.7.0",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.14.1"
+  }
+}
