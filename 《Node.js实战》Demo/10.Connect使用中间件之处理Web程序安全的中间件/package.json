@@ -1,0 +1,19 @@
+{
+  "name": "connect-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect": "^3.7.0",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "errorhandler": "^1.5.1",
+    "morgan": "^1.10.0"
+  }
+}

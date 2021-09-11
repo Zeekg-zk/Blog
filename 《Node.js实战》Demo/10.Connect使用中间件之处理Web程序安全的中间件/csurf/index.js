@@ -1,0 +1,10 @@
+const connect = require('connect')
+const cookieParser = require('cookie-parser')
+const bodyParser = require('body-parser')
+const csurf = require('csurf')
+
+connect()
+  .use(bodyParser())
+  .use(cookieParser('zk is cool'))
+  .use(csurf())
+  .listen(3000)
