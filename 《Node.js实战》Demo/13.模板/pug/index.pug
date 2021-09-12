@@ -1,0 +1,29 @@
+doctype html
+html(lang="zh-CN")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title PUG
+  body
+    p #{name}的 Pug 代码！
+    
+    hr
+    - for(let i = 0; i < 3; i++) 
+      li #{name}
+
+    hr
+    - var user = { description: undefined  }
+    - var authorised = true
+    #user
+      if user.description
+        h2 描述
+        p= user.description
+      else if authorised
+        h2 描述
+        p.
+          用户没有添加描述。
+          不写点什么吗……
+      else
+        h2 描述
+        p 用户没有描述
