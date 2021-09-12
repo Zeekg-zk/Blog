@@ -29,4 +29,4 @@
 8. [Connect使用中间件之cookieParser-bodyParser-limit-query](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/8.Connect%E8%87%AA%E5%B8%A6%E7%9A%84%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B9%8BcookieParser-bodyParser-limit-query)
 9. [Connect使用中间件之logger-favicon-methodOverride-session](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/9.Connect%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B9%8Blogger-favicon-methodOverride-session)
 10. [Connect使用中间件之处理Web程序安全的中间件](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/10.Connect%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B9%8B%E5%A4%84%E7%90%86Web%E7%A8%8B%E5%BA%8F%E5%AE%89%E5%85%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E4%BB%B6)
-11. Connect使用中间件之提供静态文件服务的中间件
+11. [Connect使用中间件之提供静态文件服务的中间件](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/11.Connect%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E4%BB%B6%E4%B9%8B%E6%8F%90%E4%BE%9B%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E6%9C%8D%E5%8A%A1%E7%9A%84%E4%B8%AD%E9%97%B4%E4%BB%B6)
