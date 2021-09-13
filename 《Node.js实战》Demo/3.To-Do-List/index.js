@@ -23,6 +23,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(3000)
 
+// 展示列表信息
 function show(res) {
   let html = `
     <html>
@@ -49,18 +50,21 @@ function show(res) {
   res.end(html)
 }
 
+// 返回没有找到资源的信息
 function notFound(req, res) {
   res.statusCode = 404
   res.setHeader('Content-Type', 'text/plain')
   res.end('Not Found')
 }
 
+// 不是 GET 或者 POST 类型的请求
 function badRequest(res) {
   res.statusCode = 400;
   res.setHeader('Content-Type', 'text/plain')
   res.end('Bad Request')
 }
 
+// 添加信息
 function add(req, res) {
   let body = ''
   req.setEncoding('utf8');
