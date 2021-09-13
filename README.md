@@ -7,6 +7,16 @@
 
 
 
+## Node 常用内置模块
+
+- `fs` 文件系统
+- `http` 超文本传输协议
+- `https` 安全超文本传输协议
+- `net` 网络
+- `path` 路径
+- `url` 网址
+- `zlib` 压缩
+
 ## npm-package
 
 手动实现一些 `npm` 包，也都会用 `jest` 测试
