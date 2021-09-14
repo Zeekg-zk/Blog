@@ -15,7 +15,7 @@
 - `net` 网络
 - `path` 路径
 - `url` 网址
-- [`zlib` 压缩](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/zlib%20%E5%8E%8B%E7%BC%A9)
+- `zlib` 压缩   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/zlib%20%E5%8E%8B%E7%BC%A9)
 
 ## npm-package
 
