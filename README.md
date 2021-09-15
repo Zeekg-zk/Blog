@@ -9,7 +9,9 @@
 
 ## Node 常用内置模块
 
-- `fs` 文件系统
+- `dns` 域名服务器
+
+- `fs` 文件系统   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/fs%20%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
 - `http` 超文本传输协议
 - `https` 安全超文本传输协议
 - `net` 网络

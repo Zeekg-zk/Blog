@@ -25,7 +25,7 @@
 - `fs.mkdir(path[, options], callback)` - 异步创建目录
 - `fs.mkdirSync(path[, options])` 同步创建目录
 
-### 删除文件
+### 删除文件或目录
 
 - `fs.unlink(path, callback)` - 异步地删除文件或符号链接
 - `fs.unlinkSync(path)` - 同步删除
