@@ -24,7 +24,7 @@
 手动实现一些 `npm` 包，也都会用 `jest` 测试
 
 1. `node-validator` - 验证字符串合法性的功能   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/npm-package/node-validator)
-2. `is-sorted` - 用于检查数组是否已排序的小模块
+2. `is-sorted` - 用于检查数组是否已排序的小模块   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/npm-package/is-sorted)
 
 ## 《Node.js实战》Demo
 
