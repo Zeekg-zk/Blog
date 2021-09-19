@@ -2,7 +2,6 @@
 
 ## 简介
 
-- base.js
 process 对象提供有关当前 Node.js 进程的信息并对其进行控制。 虽然它作为全局可用，但是建议通过 require 或 import 显式地访问它：
 `const process = require('process');`
 
