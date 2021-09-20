@@ -9,7 +9,7 @@
 
 ## Node 常用内置模块
 
-- `crypto` 加密
+- `crypto` 加密   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/crypto%20%E5%8A%A0%E5%AF%86)
 
 - `dns` 域名服务器   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/dns%20%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%99%A8)
 - `fs` 文件系统   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/fs%20%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
