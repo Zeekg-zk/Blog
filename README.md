@@ -49,3 +49,9 @@
 13. [ejs和pug模板](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/13.ejs%E5%92%8Cpug%E6%A8%A1%E6%9D%BF)
 14. [Buffer相关](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/14.Buffer%E7%9B%B8%E5%85%B3)
 15. [命令行工具](https://github.com/ZiKng-Coding/Node-Study/tree/main/%E3%80%8ANode.js%E5%AE%9E%E6%88%98%E3%80%8BDemo/15.%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7)
+
+
+
+## 其他 Node Demo
+
+1. async.mapLimit相关
