@@ -55,5 +55,5 @@
 ## 其他 Node Demo
 
 1. [async.mapLimit相关](https://github.com/Zeekg-zk/Node-Study/tree/main/Node%20Demo/async.mapLimit%E7%9B%B8%E5%85%B3)
-2. 简易认证
-3. [文件上传相关](https://github.com/Zeekg-zk/Node-Study/tree/main/Node%20Demo/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%9B%B8%E5%85%B3)
+2. [文件上传相关](https://github.com/Zeekg-zk/Node-Study/tree/main/Node%20Demo/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%9B%B8%E5%85%B3)
+3. [简易认证](https://github.com/Zeekg-zk/Node-Study/tree/main/Node%20Demo/%E7%AE%80%E6%98%93%E8%AE%A4%E8%AF%81)
