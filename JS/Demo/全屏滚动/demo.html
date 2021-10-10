@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/common.css">
+  <style>
+    .page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page span {
+      transform: scale(0);
+      font-size: 100px;
+      transition: transform 1s ease-out;
+    }
+
+    .page span.fade-in {
+      transform: scale(1);
+    }
+
+    .page:nth-child(1) {
+      background: lightpink no-repeat center/cover;
+    }
+
+    .page:nth-child(2) {
+      background: lightgreen no-repeat center/cover;
+    }
+
+    .page:nth-child(3) {
+      background: lightskyblue no-repeat center/cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="page">
+      <span>Page 111</span>
+    </div>
+    <div class="page">
+      <span>Page 222</span>
+    </div>
+    <div class="page">
+      <span>Page 333</span>
+    </div>
+  </div>
+  <script src="./src/fullPage.js"></script>
+  <script>
+    new FullPage({
+      defineAnimation: function () {
+        document.querySelector('.fade-in').classList.remove('fade-in');
+        this.pages[this.currentIndex].querySelector('span').classList.add('fade-in');
+      }
+    });
+    document.querySelector('span').classList.add('fade-in');
+  </script>
+</body>
+
+</html>
