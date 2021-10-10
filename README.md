@@ -8,7 +8,7 @@
 
 ### JS Demo
 
-- 全屏滚动
+- 全屏滚动   [查看代码](https://github.com/Zeekg-zk/Blog/tree/main/JS/Demo/%E5%85%A8%E5%B1%8F%E6%BB%9A%E5%8A%A8)
 
 
 
