@@ -1,24 +1,27 @@
 import React from "react";
+import Part from "./Part";
+import { CoursePart } from "../types";
 
 interface IProps {
-  courseParts: {
-    name: string;
-    exerciseCount: number;
-  }[];
+  courseParts: Array<CoursePart>;
 }
 
 const Content = (props: IProps) => {
   return (
     <>
-      <p>
-        {props.courseParts[0].name} {props.courseParts[0].exerciseCount}
-      </p>
-      <p>
-        {props.courseParts[1].name} {props.courseParts[1].exerciseCount}
-      </p>
-      <p>
-        {props.courseParts[2].name} {props.courseParts[2].exerciseCount}
-      </p>
+      {props.courseParts.map((item, index) => {
+        return (
+          <>
+            <p>
+              <h3>
+                {item.name} {item.exerciseCount}
+              </h3>
+              <Part courseParts={item}></Part>
+            </p>
+            <hr />
+          </>
+        );
+      })}
     </>
   );
 };
