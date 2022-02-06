@@ -9,6 +9,7 @@ export class Cat {
     comment: '自增 id',
   })
   id: number;
+
   /**
    * 名称
    */
@@ -16,6 +17,7 @@ export class Cat {
     comment: '名称',
   })
   name: string;
+
   @Column({
     comment: '颜色',
   })
