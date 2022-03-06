@@ -1,9 +1,9 @@
 /**
  * 创建 React 元素
- * @param {*} type 元素类型
- * @param {*} props 元素属性
- * @param  {...any} children 元素子数组（子节点）
- * @returns Element 的 Object 对象
+ * @param {*} type 节点类型
+ * @param {*} props 节点属性
+ * @param  {...any} children 节点的子节点
+ * @returns 
  */
 function createElement(type, props, ...children) {
   return {
@@ -20,17 +20,16 @@ function createElement(type, props, ...children) {
 }
 
 /**
- * 创建一个只有文本的元素
+ * 创建文本节点
  */
 function createTextElement(text) {
   return {
     type: "TEXT_ELEMENT",
     props: {
       nodeValue: text,
-      children: [] // 只有文本元素是没有子节点的
+      children: []
     }
   }
 }
-
 
 export default createElement;
