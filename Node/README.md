@@ -22,13 +22,6 @@
 - `zlib` 压缩   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/Node%E5%B8%B8%E7%94%A8%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97/zlib%20%E5%8E%8B%E7%BC%A9)
 - `readline` 逐行读取
 
-## npm-package
-
-手动实现一些 `npm` 包，一些案例也都会用 `jest` 测试
-
-1. `node-validator` - 验证字符串合法性的功能   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/npm-package/node-validator)
-2. `is-sorted` - 用于检查数组是否已排序的小模块   [查看代码](https://github.com/ZiKng-Coding/Node-Study/tree/main/npm-package/is-sorted)
-
 ## 《Node.js实战》Demo
 
 练习《Node.js实战》中的例子。书中有些例子现在已经不能运行，根据官网重新实现了一些例子。
