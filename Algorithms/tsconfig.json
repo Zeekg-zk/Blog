@@ -1,4 +1,6 @@
 {
+  "include": ["src"],
+  "exclude": ["dist"],
   "compilerOptions": {
     "lib": ["ES2015"],
     "module": "commonjs",
@@ -6,6 +8,5 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2015"
-  },
-  "include": ["src"]
+  }
 }
